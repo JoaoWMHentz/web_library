@@ -1,0 +1,2 @@
+insert into book (id, title, subtitle, description) values(nextval('hibernate_sequence'),'Harry Potter', 'e a pedra filosofal', 'Livro do Harry Poti');
+insert into book (id, title, subtitle, description) values(nextval('hibernate_sequence'),'Harry Potter', 'e a ordem de fenix', 'Livro do Harry Poti');
