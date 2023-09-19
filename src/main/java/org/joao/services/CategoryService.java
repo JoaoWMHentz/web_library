@@ -2,7 +2,7 @@ package org.joao.services;
 
 
 import org.joao.entities.Category;
-import org.joao.enuns.ResponsesEnum;
+import org.joao.enums.ResponsesEnum;
 
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.core.Response;

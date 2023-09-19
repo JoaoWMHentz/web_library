@@ -23,7 +23,7 @@ public class AuthorController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public Response postAuthor(Author author) {
+    public Response set(Author author) {
        return AuthorService.PersistREST(author);
     }    
 }

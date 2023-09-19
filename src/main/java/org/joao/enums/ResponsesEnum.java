@@ -1,4 +1,4 @@
-package org.joao.enuns;
+package org.joao.enums;
 
 public enum ResponsesEnum {
     SUCCESSFULLY("OPERAÇÃO REALIZADA COM SUCESSO!"),

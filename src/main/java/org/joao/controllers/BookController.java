@@ -26,7 +26,7 @@ public class BookController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public Response postBook(Book book) {
+    public Response set(Book book) {
         return BookService.PersistREST(book);
     }
 }

@@ -22,7 +22,7 @@ public class CategoryController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public Response postBook(Category category) {
+    public Response set(Category category) {
        return CategoryService.PersistREST(category);
     }
 }
