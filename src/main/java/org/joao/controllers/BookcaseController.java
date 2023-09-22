@@ -10,25 +10,27 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import org.joao.entities.Author;
+import org.joao.entities.Bookcase;
+import org.joao.entities.Bookcase;
 import org.joao.services.AuthorService;
+import org.joao.services.BookcaseService;
 import org.joao.services.CollectionItemService;
 
 import java.util.List;
 
-@Path("/author")
-public class AuthorController {
+@Path("/bookcase")
+public class BookcaseController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Author> getAll(){
-        return Author.listAll();
+    public List<Bookcase> getAll(){
+        return Bookcase.listAll();
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public Response set(Author author) {
-       return AuthorService.persistREST(author);
+    public Response set(Bookcase bookcase) {
+       return BookcaseService.persistREST(bookcase);
     }
 
     @DELETE
